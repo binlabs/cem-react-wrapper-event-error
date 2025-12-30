@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/my-component/events.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SearchInputEvent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "query",
+              "default": "query"
+            },
+            {
+              "kind": "field",
+              "name": "categories",
+              "default": "categories"
+            }
+          ],
+          "superclass": {
+            "name": "Event",
+            "module": "dist/components/my-component/events.js"
+          }
+        },
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SearchCancelEvent",
+          "superclass": {
+            "name": "Event",
+            "module": "dist/components/my-component/events.js"
+          }
+        },
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SearchSelectEvent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "result",
+              "default": "result"
+            }
+          ],
+          "superclass": {
+            "name": "Event",
+            "module": "dist/components/my-component/events.js"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SearchInputEvent",
+          "declaration": {
+            "name": "SearchInputEvent",
+            "module": "dist/components/my-component/events.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SearchCancelEvent",
+          "declaration": {
+            "name": "SearchCancelEvent",
+            "module": "dist/components/my-component/events.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SearchSelectEvent",
+          "declaration": {
+            "name": "SearchSelectEvent",
+            "module": "dist/components/my-component/events.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/my-component/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "my-component",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "/dist/components/my-component/my-component.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/my-component/interfaces.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/components/my-component/my-component.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MyComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "firstUpdated"
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            }
+          ],
+          "events": [
+            {
+              "name": "test query",
+              "type": {
+                "text": "SearchInputEvent"
+              }
+            },
+            {
+              "type": {
+                "text": "SearchCancelEvent"
+              }
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "my-component",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyComponent",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "dist/components/my-component/my-component.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/events.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SearchInputEvent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "query",
+              "type": {
+                "text": "string"
+              },
+              "default": "query"
+            },
+            {
+              "kind": "field",
+              "name": "categories",
+              "type": {
+                "text": "string[]"
+              },
+              "default": "categories"
+            }
+          ],
+          "superclass": {
+            "name": "Event",
+            "module": "src/components/my-component/events.ts"
+          }
+        },
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SearchCancelEvent",
+          "superclass": {
+            "name": "Event",
+            "module": "src/components/my-component/events.ts"
+          }
+        },
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SearchSelectEvent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "result",
+              "type": {
+                "text": "SearchResult"
+              },
+              "default": "result"
+            }
+          ],
+          "superclass": {
+            "name": "Event",
+            "module": "src/components/my-component/events.ts"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SearchInputEvent",
+          "declaration": {
+            "name": "SearchInputEvent",
+            "module": "src/components/my-component/events.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SearchCancelEvent",
+          "declaration": {
+            "name": "SearchCancelEvent",
+            "module": "src/components/my-component/events.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SearchSelectEvent",
+          "declaration": {
+            "name": "SearchSelectEvent",
+            "module": "src/components/my-component/events.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "module": "src/components/my-component/my-component.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "module": "src/components/my-component/events.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "module": "src/components/my-component/interfaces.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "my-component",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "/src/components/my-component/my-component.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/interfaces.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MyComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "firstUpdated"
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            }
+          ],
+          "events": [
+            {
+              "name": "test query",
+              "type": {
+                "text": "SearchInputEvent"
+              }
+            },
+            {
+              "type": {
+                "text": "SearchCancelEvent"
+              }
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "my-component",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyComponent",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "src/components/my-component/my-component.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
